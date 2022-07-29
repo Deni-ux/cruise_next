@@ -16,32 +16,38 @@ const About = () => {
       <div className={styles.grid}>
               <div className={styles.card}>
                   <Image src={cru1} alt="cruise" className={styles.img} />
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+                  <h2>Celebrity Flora</h2>
+                  <h4>7 Nights South America Criuse</h4>
+                  <p>Sunday 11 Sept 2022</p>
+                  <h3>£5500</h3>
           </div>
 
               <div className={styles.card}>
                   <Image src={cru2} alt="cruise" className={styles.img} />
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+                  <h2>Vision of the Seas</h2>
+                  <h4>5 Nights Europe Criuse</h4>
+            <p>Saturday 10 Sept 2022</p>
+                  <h3>£700</h3>
           </div>
 
           <div
             className={styles.card}
               >
                   <Image src={cru3} alt="cruise" className={styles.img} />
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h2>Celebrity Summit</h2>
+            <h4>12 Nights North America Criuse</h4>
+   <p>Monday 3 Sept 2022</p>
+                  <h3>£640</h3>
           </div>
 
           <div
             className={styles.card}
               >
                   <Image src={cru4} alt="cruise" className={styles.img} />
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+                  <h2>Celebrity Apex</h2>
+                  <h4>12 Nights Mediterranean Criuse</h4>
+            <p>Monday 17 Oct 2022</p>
+                  <h3>£975</h3>
           </div>
         </div></div>
   )
