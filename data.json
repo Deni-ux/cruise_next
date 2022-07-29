@@ -1,0 +1,37 @@
+﻿{
+  "cruises": [
+    {
+      "id": 1,
+      "name": "Celebrity Flora",
+      "route": "7 Nights South America Criuse",
+      "day": "Sunday",
+      "date": "11 Sept 2022",
+      "price": "£5,550",
+      "image": "https://images.unsplash.com/photo-1580541631950-7282082b53ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3J1aXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {"id": 2,
+      "name": "Vision of the Seas",
+      "route": "5 Nights Europe Criuse",
+      "day": "Saturday",
+      "date": "10 Sept 2022",
+      "price": "£700",
+      "image": "https://images.unsplash.com/photo-1511316695145-4992006ffddb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y3J1aXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {"id": 3,
+      "name": "Celebrity Summit",
+      "route": "12 Nights North America Criuse",
+      "day": "Monday",
+      "date": "3 Sept 2022",
+      "price": "£640",
+      "image": "https://images.unsplash.com/photo-1518650310565-c782d7ff666e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGNydWlzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {"id": 4,
+      "name": "Celebrity Apex",
+      "route": "12 Nights Mediterranean Criuse",
+      "day": "Monday",
+      "date": "17 Oct 2022",
+      "price": "£975",
+      "image": "https://images.unsplash.com/photo-1563829904222-2c743e614282?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNydWlzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
+}
