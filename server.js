@@ -5,6 +5,7 @@
 // const express = require('express');
 // const next = require('next');
 // const dev = process.env.NODE_ENV !== 'production';
+//const port = parseInt(process.env.PORT, 10) || 3000
 
 // //handle requests
 // const app = next({ dev });
@@ -13,12 +14,12 @@
 // //get req
 // app.prepare().then(() => {
 //     const server = express()
-//     server.get('*', (req, res) => {
+//     server.all('*', (req, res) => {
 //         return handle(req, res)
 //     });
-//     server.listen(3030, (err) => {
-//         if (err) throw err
-//         console.log('Server ready');
+//     server.listen(port, () => {
+//         
+//         console.log('Server ready!');
 //     })
 // }).catch((ex) => {
 //     console.log(ex.stack);
