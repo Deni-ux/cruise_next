@@ -63,7 +63,7 @@ const About = () => {
   
   return (
       <div className={styles.about}>
-      <h1>Adventures to have</h1>
+      <h1>What is life without Adventures</h1>
       
       <div className={styles.grid}>
   
@@ -102,7 +102,9 @@ const About = () => {
             <p>Monday 17 Oct 2022</p>
                   <h3>£975</h3>
           </div>
-        </div></div>
+      </div>
+      <button className={styles.btn}>DOWNLOAD OUR APP</button>
+    </div>
   )
 }
 

@@ -56,3 +56,20 @@
     border-radius: 8px;
     
 }
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 40px;
+    border-radius: 30px;
+    border: 1px;
+    color: white;
+    background-color: #0070f3;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: #0070f3;
+    border: 1px solid #0070f3;
+}

@@ -1,0 +1,21 @@
+﻿.containerFooter{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #0070f3;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardLg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail{
+   cursor: pointer;
+}
+.info{
+    border-bottom: 1px solid rgb(203, 203, 203);
+   padding-bottom: 10px;
+}
