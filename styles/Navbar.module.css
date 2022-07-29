@@ -1,22 +1,34 @@
 ﻿.containerNavbar {
     height: 50px;
     background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-    color: white;
+background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #0070f3;
     display: flex;
     align-items: center;
-    padding: 0 100px;
-    font-size: 18px;
+    padding: 0;
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .listItem {
     display: inline;
 
     margin-right: 30px;
-    color: azure;
+    color: var(--gray-color);
+    
     cursor: pointer;
     font-size: 16px;
+    
+}
+.listItem:hover{
+    color: var(--secondary-color);
 }

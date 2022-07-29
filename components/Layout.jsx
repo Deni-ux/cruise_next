@@ -3,6 +3,7 @@ import Head from 'next/head';
 import NavBar from './Navbar';
 
 
+
 //layout to wrap website. it has access to props children
 const Layout = ({children}) => {
   return (

@@ -1,0 +1,28 @@
+﻿.containerHero{
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+.hblue{
+    color: #0070f3;
+}
+
+.input{
+    padding: 4px 20px;
+    font-size: 20px;
+    border-radius: 32px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    
+    
+   
+}
+.input:hover{
+    border: 1px solid #0070f3;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
