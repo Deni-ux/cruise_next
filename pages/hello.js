@@ -34,4 +34,35 @@
 //   );
 // }
 
-// export default Hello;
+// export default Hello
+
+ //OPTION 1
+  // function pullData() {
+  //   fetch(apiUrl)
+  //.then(response => response.json())
+  //.then(responseData => 
+  //displayData = responseData.map(function(cruises){
+  //     return(
+    //    <h1 key={cruises.id}>{cruises.name}</h1>
+  //)
+  //})
+  //console.log(responseData))
+  //setShowCruises(displayData);
+  // }
+  
+  // //OPTION 2 ASYNC FUNCTION
+  // async function pullData() {
+  //   const response = await fetch(apiUrl);
+  //   const responseData = await response.json()
+  //    displayData = responseData.map(function(cruises){
+  //     return(
+  //      <h1 key={cruises.id}>{cruises.name}</h1>
+  // )
+  // })
+  //   console.log(responseData);
+  // setShowCruises(displayData);
+   
+  // }
+  //return( {showCruises}) in function About
+  
+  

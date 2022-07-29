@@ -1,4 +1,4 @@
-﻿import React from 'react';
+﻿import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import styles from '../styles/About.module.css';
 import cru1 from '../public/img/cru1.jpg'
@@ -8,12 +8,65 @@ import cru4 from '../public/img/cru4.jpg'
 
 
 
+
 const About = () => {
+  //how to fetch data from API
+  //TO DISPLAY DATA FROM A CALLBACK PROMISE NEED TO PUT IT IN A STATE
+ 
+  const [showCruises, setShowCruises] = useState();
+  const apiUrl = "";
+  let displayData;
+  
+  //OPTION 1
+  // function pullData() {
+  //   fetch(apiUrl)
+  //.then(response => response.json())
+  //.then(responseData => 
+  //displayData = responseData.map(function(cruises){
+  //     return(
+    //    <h1 key={cruises.id}>{cruises.name}</h1>
+  //)
+  //})
+  //console.log(responseData))
+  //setShowCruises(displayData);
+  // }
+  
+  // //OPTION 2 ASYNC FUNCTION
+  // async function pullData() {
+  //   const response = await fetch(apiUrl);
+  //   const responseData = await response.json()
+  //    displayData = responseData.map(function(cruises){
+  //     return(
+  //      <h1 key={cruises.id}>{cruises.name}</h1>
+  // )
+  // })
+  //   console.log(responseData);
+  // setShowCruises(displayData);
+   
+  // }
+  //return( {showCruises}) in function About
+  
+  
+  //OPTION GET SSP -NEXT
+  // displayData = data.map(function(cruises){
+  //     return(
+  //      <h1 key={cruises.id}>{cruises.name}</h1>
+  // )
+  // })
+  
+  
+  // useEffect(() => {
+  //   pullData()
+  // }, [])
     
+  // 
+  
   return (
       <div className={styles.about}>
-          <h1>Adventures to have</h1>
+      <h1>Adventures to have</h1>
+      
       <div className={styles.grid}>
+  
               <div className={styles.card}>
                   <Image src={cru1} alt="cruise" className={styles.img} />
                   <h2>Celebrity Flora</h2>
@@ -55,3 +108,14 @@ const About = () => {
 
 export default About;
 
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`url`);
+  const data = await res.json();
+ // Pass data to the page via props
+  return {
+    props:{data}
+  }
+
+  //render data at function About({data});
+}
