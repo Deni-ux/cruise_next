@@ -1,8 +1,4 @@
-﻿//install express then create server.js file
-
-//change "dev" in package.json to "node  server.js"
-
-const express = require('express');
+﻿const express = require('express');
 const next = require('next');
 const dev = process.env.NODE_ENV !== 'production';
 const port = parseInt(process.env.PORT, 10) || 3000

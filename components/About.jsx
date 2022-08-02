@@ -1,4 +1,4 @@
-﻿import React, {useState, useEffect} from 'react';
+﻿
 import Image from 'next/image';
 import styles from '../styles/About.module.css';
 
@@ -8,56 +8,7 @@ import styles from '../styles/About.module.css';
 
 const About = ({ cruises }) => {
   console.log(cruises);
-  //how to fetch data from API
-  //TO DISPLAY DATA FROM A CALLBACK PROMISE NEED TO PUT IT IN A STATE
- 
-  const [showCruises, setShowCruises] = useState();
-  const apiUrl = "";
-  let displayData;
   
-  //OPTION 1
-  // function pullData() {
-  //   fetch(apiUrl)
-  //.then(response => response.json())
-  //.then(responseData => 
-  //displayData = responseData.map(function(cruises){
-  //     return(
-    //    <h1 key={cruises.id}>{cruises.name}</h1>
-  //)
-  //})
-  //console.log(responseData))
-  //setShowCruises(displayData);
-  // }
-  
-  // //OPTION 2 ASYNC FUNCTION
-  // async function pullData() {
-  //   const response = await fetch(apiUrl);
-  //   const responseData = await response.json()
-  //    displayData = responseData.map(function(cruises){
-  //     return(
-  //      <h1 key={cruises.id}>{cruises.name}</h1>
-  // )
-  // })
-  //   console.log(responseData);
-  // setShowCruises(displayData);
-   
-  // }
-  //return( {showCruises}) in function About
-  
-  
-  //OPTION GET SSP -NEXT
-  // displayData = data.map(function(cruises){
-  //     return(
-  //      <h1 key={cruises.id}>{cruises.name}</h1>
-  // )
-  // })
-  
-  
-  // useEffect(() => {
-  //   pullData()
-  // }, [])
-    
-  // 
   
   return (
       <div className={styles.about}>
@@ -111,14 +62,3 @@ const About = ({ cruises }) => {
 
 export default About;
 
-// export async function getServerSideProps() {
-//   // Fetch data from external API
-//   const res = await fetch(`url`);
-//   const data = await res.json();
-//  // Pass data to the page via props
-//   return {
-//     props:{data}
-//   }
-
-//   //render data at function About({data});
-// }
