@@ -1,0 +1,38 @@
+﻿export const data = [
+  {
+    id: 1,
+    name: "Celebrity Flora",
+    route: "7 Nights South America Criuse",
+    day: "Sunday",
+    date: "11 Sept 2022",
+    price: "£5,550",
+    image: "cru1.jpg",
+  },
+  {
+    id: 2,
+    name: "Vision of the Seas",
+    route: "5 Nights Europe Criuse",
+    day: "Saturday",
+    date: "10 Sept 2022",
+    price: "£700",
+    image: "cru2.jpg",
+  },
+  {
+    id: 3,
+    name: "Celebrity Summit",
+    route: "12 Nights North America Criuse",
+    day: "Monday",
+    date: "3 Sept 2022",
+    price: "£640",
+    image: "cru3.jpg",
+  },
+  {
+    id: 4,
+    name: "Celebrity Apex",
+    route: "12 Nights Mediterranean Criuse",
+    day: "Monday",
+    date: "17 Oct 2022",
+    price: "£975",
+    image: "cru4.jpg",
+  },
+];

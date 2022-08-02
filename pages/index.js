@@ -1,10 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { Hero, About, AboutAPI } from '../components';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { Hero, About } from "../components";
+import { data } from "../data";
 
+export default function Home({ cruises }) {
+  console.log(cruises);
 
-export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +20,16 @@ You are 100% financially protected, as we are part of The Travel Trust Associati
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <About />
+      <About cruises={cruises} />
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const cruises = data;
+  return {
+    props: {
+      cruises,
+    },
+  };
+};

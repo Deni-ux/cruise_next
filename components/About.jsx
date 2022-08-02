@@ -1,15 +1,13 @@
 ﻿import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import styles from '../styles/About.module.css';
-import cru1 from '../public/img/cru1.jpg'
-import cru2 from '../public/img/cru2.jpg'
-import cru3 from '../public/img/cru3.jpg'
-import cru4 from '../public/img/cru4.jpg'
 
 
 
 
-const About = () => {
+
+const About = ({ cruises }) => {
+  console.log(cruises);
   //how to fetch data from API
   //TO DISPLAY DATA FROM A CALLBACK PROMISE NEED TO PUT IT IN A STATE
  
@@ -66,15 +64,18 @@ const About = () => {
       <h1>What is life without Adventures</h1>
       
       <div className={styles.grid}>
-  
-              <div className={styles.card}>
-                  <Image src={cru1} alt="cruise" className={styles.img} />
-                  <h2>Celebrity Flora</h2>
-                  <h4>7 Nights South America Criuse</h4>
-                  <p>Sunday 11 Sept 2022</p>
-                  <h3>£5500</h3>
+        {cruises.map((cruise) =>( 
+    
+           <div key={cruise.id} className={styles.card}>
+                  <Image src={`/img/${cruise.image}`} alt="cruise" className={styles.img} width="100%" height="100%" layout='responsive' objectFit='cover' />
+             <h2>{cruise.name}</h2>
+             <h4>{cruise.route}</h4>
+             <p>{cruise.day} {cruise.date}</p>
+             <h3>{cruise.price}</h3>
           </div>
-
+  ))}
+          
+{/* 
               <div className={styles.card}>
                   <Image src={cru2} alt="cruise" className={styles.img} />
                   <h2>Vision of the Seas</h2>
@@ -101,8 +102,8 @@ const About = () => {
                   <h4>12 Nights Mediterranean Criuse</h4>
             <p>Monday 17 Oct 2022</p>
                   <h3>£975</h3>
-          </div>
-      </div>
+          </div> */}
+        </div> 
       <button className={styles.btn}>DOWNLOAD OUR APP</button>
     </div>
   )
@@ -110,14 +111,14 @@ const About = () => {
 
 export default About;
 
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(`url`);
-  const data = await res.json();
- // Pass data to the page via props
-  return {
-    props:{data}
-  }
+// export async function getServerSideProps() {
+//   // Fetch data from external API
+//   const res = await fetch(`url`);
+//   const data = await res.json();
+//  // Pass data to the page via props
+//   return {
+//     props:{data}
+//   }
 
-  //render data at function About({data});
-}
+//   //render data at function About({data});
+// }
